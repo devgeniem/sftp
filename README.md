@@ -1,3 +1,7 @@
+# Modified by Geniem
+- ssh pub key passed via env
+- static per build host keys, for security make your own BUILD!
+
 # SFTP
 
 ![Docker Automated build](https://img.shields.io/docker/automated/atmoz/sftp.svg) ![Docker Build Status](https://img.shields.io/docker/build/atmoz/sftp.svg) ![Docker Stars](https://img.shields.io/docker/stars/atmoz/sftp.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/atmoz/sftp.svg)
