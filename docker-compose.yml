@@ -2,14 +2,13 @@ version: '2'
 
 services:
   ftp:
-    image: devgeniem/kainari-tietopankki-sftp
     # image: "atmoz/sftp"
-    container_name: tietopankki-sftp
+    container_name: sftp
     environment:
       UPLOADER_SSH_KEY: |
-        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCweSZuTiODyISkRSdwKIUD5MMmfWIbfQ4S272CFZE8+0NRBkyeoogyQwNVGVkXFz93DRbCfPo5mmlu/MUJ+w9eex0QopwW0HBnG1Fgmd8OuX2IaeDtMvJ+6Lm/KhklXQ5sNEIw4fkUzNd9MymS7L0UBRhLpADkafYnQt2EGWllcB3r/lYAWqwGxFhERa47vVDC6ciVuL1v6sc9aHcZL3U5xnsFoi8noJSV+FHOXwcloU+xXsW5Q19s0l3B94NtjFhocSE6QfRq8ZOZOYEj6xJifd8ya27TTBzEb8shRYXTLtAteiOMCbV+QpIpmXkkjTdPez163ua+p0J9+9LApn+N neo
+       insert here pub part of your ssh key
     volumes:
-        - ./shared:/home/neo/shared
+        - ./shared:/home/uploader/shared
     ports:
         - "2222:22"
-    command: neo::1001
+    command: uploader::1001
